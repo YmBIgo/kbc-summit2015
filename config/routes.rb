@@ -2,11 +2,7 @@ Rails.application.routes.draw do
 
   root to: "creatives#index"
 
-  match 'team1',      to: 'static_pages#team1',     via:'get'
-  match 'team2',      to: 'static_pages#team2',     via:'get'
-  match 'team3',      to: 'static_pages#team3',     via:'get'
-  match 'team4',      to: 'static_pages#team4',     via:'get'
-  match 'team5',      to: 'static_pages#team5',     via:'get'
+  resources :teams, only:[:index, :show]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
