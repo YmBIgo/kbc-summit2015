@@ -2,6 +2,9 @@ Rails.application.routes.draw do
 
   root to: "creatives#index"
 
+  match 'summit',      to: 'static_pages#summit',         via: 'get'
+  match 'leverage',   to: 'static_pages#leverage',      via: 'get'
+
   resources :teams, only:[:index, :show]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

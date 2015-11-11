@@ -60,15 +60,56 @@ p {
     background-color: #222;
 }
 
+.bg-brown{
+    background-color:#F0F0E8
+}
+
 .text-faded {
     color: rgba(255,255,255,.7);
 }
+
+/* BEGIN */
+    .text-section{
+        margin-top:20px;
+        padding-top:50px;
+    }
+    .text-explain {
+        /*line-height:1.7;*/
+/*      border-color: #f05f40;*/
+    }
+    .clearfix{
+      content:"";
+      display: block;
+      clear: both;
+    }
+    .explain-area{
+        margin:20px 0 20px 20px;
+        padding:20px 0;
+        border-bottom:1px dashed;
+        border-top:1px dashed;
+    }
+/* END */
 
 
 /* BEGIN */
     .margin_auto_block{
         margin: 0 auto;
     }
+/* END */
+
+/* BEGIN */
+
+    .schedule_table{
+        min-width:300px;
+        max-width:500px;
+        tr{
+            background-color:#dde3e7;
+            td{
+                border-color:white;
+            }
+        }
+    }
+
 /* END */
 
 section {
@@ -217,7 +258,14 @@ header .header-content .header-content-inner p {
     font-weight: 300;
     color: rgba(255,255,255,.7);
 }
+/* BEGIN */
+    header .header-content .header-title{
+        min-width:300px;
+        background-color:rgba(0,0,0,.7);
+        padding:10px 0;
+    }
 
+/* END */
 @media(min-width:768px) {
     header {
         min-height: 100%;
@@ -456,6 +504,11 @@ fieldset[disabled] .btn-primary.active {
     padding: 15px 30px;
 }
 
+/**/
+    .btn-margin{
+        margin:10px;
+    }
+/**/
 ::-moz-selection {
     text-shadow: none;
     color: #fff;
