@@ -88,6 +88,11 @@ p {
         border-bottom:1px dashed;
         border-top:1px dashed;
     }
+
+    .fix-explain-title-margin{
+        margin-right:15px;
+    }
+
 /* END */
 
 
@@ -99,6 +104,7 @@ p {
 
 /* BEGIN */
 
+
     .schedule_table{
         min-width:300px;
         max-width:500px;
@@ -107,6 +113,15 @@ p {
             td{
                 border-color:white;
             }
+        }
+    }
+
+    .price-table{
+        min-width:300px;
+        max-width:500px;
+        margin-bottom:20px;
+        tr{
+            background-color:#F7F7F7;
         }
     }
 
@@ -530,6 +545,13 @@ img::-moz-selection {
     color: #fff;
     background: 0 0;
 }
+
+/* BEGIN */
+    .img_thumb{
+        width:80%;
+        margin-bottom:20px;
+    }
+/* END */
 
 body {
     webkit-tap-highlight-color: #222;
