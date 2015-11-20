@@ -1,12 +1,12 @@
 <div class="col-lg-4 col-sm-6">
-<a href="/teams/<%= team.id %>" class="portfolio-box">
-    <%= image_tag "creative/portfolio/#{team.id}.jpg", class: "img-responsive", alt: "" %>
-    <div class="portfolio-box-caption">
-        <div class="portfolio-box-caption-content">
-            <div class="project-name">
-                <%= team.text %>
-            </div>
-        </div>
-    </div>
-</a>
+  <a href="/teams/<%= team.id %>" class="portfolio-box">
+      <%= image_tag "creative/portfolio/#{team.id}.jpg", class: "img-responsive", alt: "#{team.name}" %>
+      <div class="portfolio-box-caption">
+          <div class="portfolio-box-caption-content">
+              <div class="project-name">
+                  <%= team.name %>
+              </div>
+          </div>
+      </div>
+  </a>
 </div>

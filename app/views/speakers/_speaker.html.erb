@@ -1,0 +1,13 @@
+<div class="col-lg-4 col-sm-6">
+  <a href="/speakers/<%= speaker.id %>" class="portfolio-box">
+      <h3 class="btn btn-primary btn-xl btn-margin-bottom"><%= speaker.name %></h3>
+      <%= image_tag "creative/portfolio/Speaker#{speaker.id}.jpg", class: "img-responsive margin_auto_block", alt: "#{speaker.name}" %>
+      <div class="portfolio-box-caption">
+          <div class="portfolio-box-caption-content">
+              <div class="project-name">
+                  <%= speaker.name %>
+              </div>
+          </div>
+      </div>
+  </a>
+</div>

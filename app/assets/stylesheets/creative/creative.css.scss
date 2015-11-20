@@ -185,7 +185,7 @@ aside {
     background-color: transparent;
 }
 
-@media(min-width:768px) {
+@media(min-width:2000px) {
     .navbar-default {
         border-color: rgba(255,255,255,.3);
         background-color: transparent;
@@ -274,6 +274,7 @@ header .header-content .header-content-inner p {
     font-weight: 300;
     color: rgba(255,255,255,.7);
 }
+
 /* BEGIN */
     header .header-content .header-title{
         min-width:300px;
@@ -282,6 +283,7 @@ header .header-content .header-content-inner p {
     }
 
 /* END */
+
 @media(min-width:768px) {
     header {
         min-height: 100%;
@@ -520,11 +522,16 @@ fieldset[disabled] .btn-primary.active {
     padding: 15px 30px;
 }
 
+.btn-margin-bottom{
+    margin-bottom:20px;
+}
+
 /**/
     .btn-margin{
         margin:10px;
     }
 /**/
+
 ::-moz-selection {
     text-shadow: none;
     color: #fff;
@@ -551,6 +558,10 @@ img::-moz-selection {
     .img_thumb{
         width:80%;
         margin-bottom:20px;
+    }
+
+    .speaker-img{
+        width:50%;
     }
 /* END */
 

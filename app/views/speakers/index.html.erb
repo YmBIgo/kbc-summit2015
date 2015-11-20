@@ -1,13 +1,19 @@
-<% provide :title, "チームを見る" %>
+<% provide :title, "登壇者を見る" %>
 <aside class="bg-dark">
 </aside>
 
 <section class="container bg-brown text-section">
   <div class="text-center">
-    <h2 >参加チーム一覧</h2>
+    <h2 >登壇者一覧</h2>
     <hr>
     <div class="explain-area">
-        <h4>Comming soon...</h4>
+        <section class="no-padding" id="portfolio">
+            <div class="container-fluid">
+                <div class="row no-gutter">
+                    <%= render @speakers %>
+                </div>
+            </div>
+        </section>
     </div>
     <div style="margin-top:50px">
       <%= link_to "トップに戻る", root_path, :class => "btn btn-primary btn-xl",:style => "margin-top:20px" %>
@@ -15,11 +21,4 @@
   </div>
 </section>
 
-<!-- <section class="no-padding" id="portfolio">
-    <div class="container-fluid">
-        <div class="row no-gutter">
-            <%= render @teams %>
-        </div>
-    </div>
-</section> -->
 <br>

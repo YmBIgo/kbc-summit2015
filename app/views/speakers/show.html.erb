@@ -1,0 +1,36 @@
+<% provide :title, "#{@speaker.name}" %>
+<aside class="bg-dark">
+</aside>
+<div class="container bg-brown text-section">
+  <div class="text-center">
+    <h2><%= @speaker.name %></h2>
+    <h4><%= @speaker.job %></h4>
+    <hr>
+    <%= image_tag "creative/portfolio/Speaker#{@speaker.id}.jpg", class: "img-responsive margin_auto_block speaker-img", alt: "#{@speaker.name}様" %>
+    <% unless @speaker.id==5 %>
+      <h3>会社概要</h3>
+      <hr>
+      <div class="explain-area text-left">
+        <p class="text-explain">
+          <%= simple_format(@speaker.introduce) %>
+        </p>
+      </div>
+    <% end %>
+    <h3>経歴</h3>
+    <hr>
+    <div class="explain-area text-left">
+      <p class="text-explain">
+        <%= simple_format(@speaker.carrier) %>
+      </p>
+    </div>
+    <h3>学生へのメッセージ</h3>
+    <hr>
+    <div class="explain-area text-left">
+      <p class="text-explain">
+        <%= simple_format(@speaker.message) %>
+      </p>
+    </div>
+    <a href="/speakers" class="btn btn-primary btn-xl">登壇者一覧に戻る</a>
+  </div>
+</div>
+<br>
