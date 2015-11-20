@@ -66,6 +66,8 @@
         <hr>
         <p class="text-explain text-center">
           随時登壇者の皆様を更新していきます。
+          <br>
+          登壇者の情報は<a href="/speakers">コチラ</a>から
         </p>
         <i class="fa fa-4x fa-rocket wow bounceIn text-primary" data-wow-delay=".1s"></i>
         <h3>「次に来る」スタートアップといち早く交流！</h3>
@@ -157,9 +159,23 @@
     <hr>
     <%= link_to "チーム一覧を見る", teams_path, :class => "btn btn-primary btn-xl" %>
     <br>
-    <div style="margin-top:50px;border-top:1px dashed">
-      <%= link_to "トップに戻る", root_path, :class => "btn btn-primary btn-xl",:style => "margin-top:20px" %>
-    </div>
+  </div>
+  <div class="explain-area">
+    <h2 class="text-center">去年の様子</h2>
+    <hr>
+    <section id="portfolio" style="padding:20px">
+      <div class="container-fluid">
+        <div class="row no-gutter">
+          <% picnum=10 %>
+          <% 1.upto(picnum) do |n| %>
+            <%= render 'summitpic', n: n %>
+          <% end %>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="text-center">
+    <%= link_to "トップに戻る", root_path, :class => "btn btn-primary btn-xl",:style => "margin-top: 20px" %>
   </div>
 </section>
 <br>
