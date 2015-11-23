@@ -1,0 +1,22 @@
+<% provide :title, "登壇者： #{@speaker.name}の情報を更新しました！" %>
+<aside class="bg-dark">
+</aside>
+
+<section class="container bg-brown text-section">
+  <div class="text-center">
+    <% @speakers.each do |speaker| %>
+      <%= link_to "#{speaker.name}様", edit_speaker_path(speaker.id), :class => "btn btn-primary" %>　
+    <% end %>
+    <hr>
+    <% @teams.each do |team| %>
+      <%= link_to "#{team.name}", edit_team_path(team.id), :class => "btn btn-primary" %>　
+    <% end %>
+    <hr>
+    <h3><%= "「#{@speaker.name}様」の情報を更新しました" %></h3>
+    <hr>
+    <%= link_to "#{@speaker.name}様の編集画面に戻る", edit_speaker_path(@speaker.id), :class => "btn btn-primary" %>
+    <hr>
+    <%= link_to "#{@speaker.name}様の情報を見る", speaker_path(@speaker.id), :class => "btn btn-primary" %>
+  </div>
+</section>
+<br>

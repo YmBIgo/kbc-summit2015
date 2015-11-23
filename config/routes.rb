@@ -5,8 +5,8 @@ Rails.application.routes.draw do
   match 'summit',      to: 'static_pages#summit',         via: 'get'
   match 'leverage',   to: 'static_pages#leverage',      via: 'get'
 
-  resources :teams, only:[:index, :show]
-  resources :speakers, only:[:index, :show]
+  resources :teams, only:[:index, :show, :edit, :update]
+  resources :speakers, only:[:index, :show, :edit, :update]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
