@@ -13,12 +13,12 @@ class SpeakersController < ApplicationController
   def edit
     @speaker = Speaker.find(params[:id])
     @speakers = Speaker.all
-    @team = Team.find(params[:id])
+    # @team = Team.find(params[:id])
     @teams = Team.all
   end
 
   def update
-    @team = Team.find(params[:id])
+    # @team = Team.find(params[:id])
     @teams = Team.all
     @speaker = Speaker.find(params[:id])
     @speakers = Speaker.all
