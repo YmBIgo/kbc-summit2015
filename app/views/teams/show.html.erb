@@ -5,13 +5,12 @@
   <div class="text-center">
     <h2><%= @team.name %></h2>
     <hr>
-<!--     <%= image_tag "creative/portfolio/#{@team.id}.jpg", class: "img-responsive margin_auto_block", alt: @team.name %> -->
-    <h4>comming soon...</h4>
+     <%= image_tag "creative/portfolio/team#{@team.id}.jpg", class: "img-responsive margin_auto_block", alt: @team.name %>
     <h3>事業概要</h3>
     <hr>
     <div class="explain-area">
       <p class="text-explain text-left">
-<!--       <p><%= simple_format(@team.text) %></p> -->
+       <p><%= simple_format(@team.text) %></p>
       </p>
     </div>
   </div>

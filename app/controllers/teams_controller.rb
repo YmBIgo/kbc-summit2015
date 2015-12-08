@@ -3,7 +3,7 @@ class TeamsController < ApplicationController
     http_basic_authenticate_with :name => ENV['EDIT_USER'], :password => ENV['EDIT_PASS'], only:[:edit, :update]
 
   def index
-    @teams = Team.all
+    @teams = Team.all.order('id ASC')
   end
 
   def show
