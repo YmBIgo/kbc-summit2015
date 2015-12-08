@@ -1,6 +1,14 @@
 <div class="col-lg-4 col-sm-6">
-  <a href="/teams/<%= team.id %>" class="portfolio-box">
+  <a href="/teams/<%= team.id %>" class="portfolio-box" style="min-height:345px">
+      <% if team.id==1 %>
+        <div style="padding-top:60px">
+      <% elsif team.id==3 %>
+        <div style="padding-left:70px;padding-top:30px">
+      <% else %>
+        <div>
+      <% end %>
       <%= image_tag "creative/portfolio/team#{team.id}.jpg", class: "img-responsive", alt: "#{team.name}" %>
+      </div>
       <div class="portfolio-box-caption">
           <div class="portfolio-box-caption-content">
               <div class="project-name">

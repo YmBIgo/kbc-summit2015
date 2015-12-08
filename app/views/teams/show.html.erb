@@ -5,7 +5,7 @@
   <div class="text-center">
     <h2><%= @team.name %></h2>
     <hr>
-     <%= image_tag "creative/portfolio/team#{@team.id}.jpg", class: "img-responsive margin_auto_block", alt: @team.name %>
+     <%= image_tag "creative/portfolio/team#{@team.id}.jpg", class: "img-responsive margin_auto_block speaker-img", alt: @team.name %>
     <h3>事業概要</h3>
     <hr>
     <div class="explain-area">
@@ -13,6 +13,7 @@
        <p><%= simple_format(@team.text) %></p>
       </p>
     </div>
+    <a href="/teams" class="btn btn-primary btn-xl">参加者一覧に戻る</a>
   </div>
 </div>
 <br>
