@@ -565,6 +565,67 @@ img::-moz-selection {
     }
 /* END */
 
+/* BEGIN */
+
+.company-title{
+    padding-bottom:5px;
+    border-bottom:1px dashed;
+}
+
+.company-img{
+    width:300px;
+    margin:20px auto;
+}
+
+.company-img-small{
+    width:250px;
+    margin:20px auto;
+}
+
+.company-area{
+}
+
+.ubiregi{
+    background-color:white;
+    width:280px;
+    height:100px;
+    margin:20px auto;
+    padding-top:1px;
+}
+
+.sponsor-gold-title{
+    font-size:20px;
+    width:300px;
+    margin:0 auto;
+    padding:5px;
+    border-radius:50px;
+    background-color:gold;
+    color:black;
+    /*border-bottom:2px solid;*/
+}
+
+.sponsor-silver-title{
+    font-size:20px;
+    width:300px;
+    margin:0 auto;
+    padding:5px;
+    border-radius:50px;
+    background-color:silver;
+    color:black;
+}
+
+.sponsor-bronze-title{
+    font-size:20px;
+    width:300px;
+    margin:0 auto;
+    padding:5px;
+    border-radius:50px;
+    background-color:#CD7F32;
+    color:black;
+}
+
+/* END */
+
 body {
     webkit-tap-highlight-color: #222;
 }
