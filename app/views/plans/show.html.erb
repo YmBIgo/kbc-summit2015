@@ -1,0 +1,18 @@
+<% provide :title, "スケジュールを確認する" %>
+<aside class="bg-dark">
+</aside>
+<section class="container bg-brown text-section">
+  <div class="text-center">
+    <h2><strong><%= @plan.dinner_name %>様</strong></h2>
+    <h4><%= "#{@plan.start_month}月#{@plan.start_day}日#{@plan.start_time}時から" %></h4>
+    <h4><%= @plan.detail %></h4>
+    <hr>
+    <h3>参加予定者</h3>
+    <% @members.each do |m| %>
+      <p>◯ <%= m.name %></p>
+    <% end %>
+    <br>
+    <a href="/members/new" class="btn btn-primary">参加したい</a>
+  </div>
+</section>
+<br>

@@ -1,0 +1,23 @@
+<% provide :title, "日程を追加する" %>
+<aside class="bg-dark">
+</aside>
+<section class="container bg-brown text-section">
+  <div class="text-center">
+    <h2><strong>日程を追加する<strong></h2>
+    <hr>
+    <%= form_for(@member) do |f| %>
+      <div class="form-item plan_text_field">
+        <%= f.label "名前" %>
+        <%= f.text_field :name, :class => "form-control" %>
+      </div>
+      <div class="form-item plan_text_field">
+        <%= f.label "メンター・SV様" %><br>
+        <%= f.collection_select :plan_id, @plans, :id, :dinner_name %>
+      </div>
+      <div class="actions">
+        <%= f.submit "登録する", :class => "btn btn-primary btn-md" %>
+      </div>
+    <% end %>
+  </div>
+</section>
+<br>

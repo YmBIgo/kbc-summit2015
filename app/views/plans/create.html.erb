@@ -1,0 +1,14 @@
+<% provide :title, "スケジュールを追加しました" %>
+<aside class="bg-dark">
+</aside>
+<section class="container bg-brown text-section">
+  <div class="text-center">
+    <h2><strong>スケジュールを追加しました</strong></h2>
+    <hr>
+    <h3><%= @plan.dinner_name %>さん（<%= @plan.start_month %>月<%= @plan.start_day %>日<%= @plan.start_time %>時開始）</h3>
+    <h4><%= @plan.detail %></h4>
+    <hr>
+    <p>で登録しました</p>
+  </div>
+</section>
+<br>

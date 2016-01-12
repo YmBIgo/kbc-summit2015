@@ -1,0 +1,37 @@
+<% provide :title, "スケジュールを追加する" %>
+<aside class="bg-dark">
+</aside>
+<section class="container bg-brown text-section">
+  <div class="text-center">
+    <h2><strong>スケジュールを追加する</strong></h2>
+    <hr>
+    <%= form_for(@plan) do |f| %>
+      <div class="form-item plan_text_field">
+        <%= f.label "お会いする方" %>
+        <%= f.text_field :dinner_name, :class => "form-control" %>
+      </div>
+      <div class="form-item plan_text_field row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+          <%= f.label "月" %>
+          <%= f.number_field :start_month, :class => "form-control", :placeholder => "数字で入力" %>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+          <%= f.label "日" %>
+          <%= f.number_field :start_day, :class => "form-control", :placeholder => "数字で入力" %>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3">
+          <%= f.label "時間" %>
+          <%= f.number_field :start_time, :class => "form-control" %>
+        </div>
+      </div>
+      <div class="form-item plan_text_area" >
+        <%= f.label "備考" %>
+        <%= f.text_area :detail, :size => "30x8", :class => "form-control" %>
+      </div>
+      <div class="actions">
+        <%= f.submit "登録する", :class => "btn btn-primary btn-md" %>
+      </div>
+    <% end %>
+  </div>
+</section>
+<br>

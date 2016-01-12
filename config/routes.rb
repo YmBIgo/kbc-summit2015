@@ -6,7 +6,9 @@ Rails.application.routes.draw do
   match 'leverage',   to: 'static_pages#leverage',      via: 'get'
 
   resources :teams, only:[:index, :show, :edit, :update]
-  resources :speakers, only:[:index, :show, :edit, :update]
+  resources :speakers, only:[:new, :create, :index, :show, :edit, :update]
+  resources :plans, only:[:new, :create, :index, :show]
+  resources :members, only:[:new, :create]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

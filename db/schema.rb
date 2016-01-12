@@ -11,7 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151120020342) do
+ActiveRecord::Schema.define(version: 20160104073729) do
+
+  create_table "members", force: :cascade do |t|
+    t.string   "name",         limit: 255
+    t.integer  "plan_id",      limit: 4
+    t.boolean  "attend_check"
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+  end
+
+  create_table "plans", force: :cascade do |t|
+    t.string   "dinner_name", limit: 255,               null: false
+    t.integer  "start_month", limit: 4,     default: 1, null: false
+    t.integer  "start_day",   limit: 4,                 null: false
+    t.integer  "start_time",  limit: 4,                 null: false
+    t.text     "detail",      limit: 65535
+    t.datetime "created_at",                            null: false
+    t.datetime "updated_at",                            null: false
+  end
 
   create_table "speakers", force: :cascade do |t|
     t.string   "name",       limit: 255
