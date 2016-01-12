@@ -4,6 +4,12 @@
 <section class="container bg-brown text-section">
   <div class="text-center">
     <table class="table">
+      <thead>
+        <tr>
+          <td><strong>メンター・SV</strong></td>
+          <td><strong>時間</strong></td>
+        </tr>
+      </thead>
       <% @plans.each do |p| %>
         <tr>
           <td><%= link_to "#{p.dinner_name}様", plan_path(p.id) %></td>
@@ -11,6 +17,7 @@
         </tr>
       <% end %>
     </table>
+    <a href="/plans/new" class="btn btn-primary">予定を追加する</a>
   </div>
 </section>
 <br>
